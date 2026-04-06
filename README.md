@@ -142,6 +142,20 @@ MemPalace loads 170 tokens of critical facts on wake-up — your team, your proj
 
 ### The Palace
 
+The layout is fairly simple, though it took a long time to get there.
+
+It starts with a **wing**. Every project, person, or topic you're filing gets its own wing in the palace.
+
+Each wing has **rooms** connected to it, where information is divided into subjects that relate to that wing — so every room is a different element of what your project contains. Project ideas could be one room, employees could be another, financial statements another. There can be an endless number of rooms that split the wing into sections. The MemPalace install detects these for you automatically, and of course you can personalize it any way you feel is right.
+
+Every room has a **closet** connected to it, and here's where things get interesting. We've developed an AI language called **AAAK**. Don't ask — it's a whole story of its own. Your agent learns the AAAK shorthand every time it wakes up. Because AAAK is essentially English, but a very truncated version, your agent understands how to use it in seconds. It comes as part of the install, built into the MemPalace code. In our next update, we'll add AAAK directly to the closets, which will be a real game changer — the amount of info in the closets will be much bigger, but it will take up far less space and far less reading time for your agent.
+
+Inside those closets are **drawers**, and those drawers are where your original files live. In this first version, we haven't used AAAK as a closet tool, but even so, the summaries have shown **96.6% recall** in all the benchmarks we've done across multiple benchmarking platforms. Once the closets use AAAK, searches will be even faster while keeping every word exact. But even now, the closet approach has been a huge boon to how much info is stored in a small space — it's used to easily point your AI agent to the drawer where your original file lives. You never lose anything, and all this happens in seconds.
+
+There are also **halls**, which connect rooms within a wing, and **tunnels**, which connect rooms from different wings to one another. So finding things becomes truly effortless — we've given the AI a clean and organized way to know where to start searching, without having to look through every keyword in huge folders.
+
+You say what you're looking for and boom, it already knows which wing to go to. Just *that* in itself would have made a big difference. But this is beautiful, elegant, organic, and most importantly, efficient.
+
 ```
   ┌─────────────────────────────────────────────────────────────┐
   │  WING: Person                                              │
@@ -176,8 +190,8 @@ MemPalace loads 170 tokens of critical facts on wake-up — your team, your proj
 **Rooms** — specific topics within a wing. Auth, billing, deploy — endless rooms.
 **Halls** — connections between related rooms *within* the same wing. If Room A (auth) and Room B (security) are related, a hall links them.
 **Tunnels** — connections *between* wings. When Person A and a Project both have a room about "auth," a tunnel cross-references them automatically.
-**Closets** — compressed memories stored in AAAK. Fast for AI to read.
-**Drawers** — the original verbatim transcripts. The exact words, never summarized.
+**Closets** — compressed summaries that point to the original content. Fast for AI to read.
+**Drawers** — the original verbatim files. The exact words, never summarized.
 
 **Halls** are memory types — the same in every wing, acting as corridors:
 - `hall_facts` — decisions made, choices locked in
