@@ -36,3 +36,8 @@ venv/
 
 # ChromaDB local data
 *.sqlite3-journal
+
+# MemPalace runtime files
+MEMORY/
+entities.json
+mempalace.yaml
